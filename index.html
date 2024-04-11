@@ -4,40 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Fun Fact Factory: AI fun fact generator</title>
   </head>
   <body>
-    <header>
-      <img src="src/fun-fact-factory.png" alt="" />
-    </header>
-    <main>
-      <form action="">
-        <label for="search-bar">Enter a topic</label>
-        <input
-          type="text"
-          id="search-bar"
-          required
-          autofocus
-          placeholder="e.g. bananas, Harry Potter, ..."
-        />
-        <input type="submit" value="Generate a fun fact" />
-      </form>
-      <div class="answer">Apples float...</div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/danacaletkova" target="_blank"
-        >Dana Caletkova</a
-      >
-      and is open-sourced on
-      <a
-        href="https://github.com/danacaletkova/ai-fun-fact-generator"
-        target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://fun-fact-factory.netlify.app" target="_blank">Netlify</a>
-    </footer>
+    <div class="content">
+      <header>
+        <img src="src/fun-fact-factory.png" alt="" />
+      </header>
+      <main>
+        <form class="search-form">
+          <label class="label" for="search-input">Enter a topic:</label>
+          <input
+            class="search-input"
+            type="text"
+            id="search-input"
+            required
+            autofocus
+            placeholder="e.g. bananas, Harry Potter, ..."
+          />
+          <input
+            class="search-button"
+            type="submit"
+            value="Generate a fun fact"
+          />
+        </form>
+        <div class="answer">Apples float...</div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/danacaletkova" target="_blank"
+          >Dana Caletkova</a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/danacaletkova/ai-fun-fact-generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://fun-fact-factory.netlify.app" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
