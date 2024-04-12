@@ -19,7 +19,7 @@ function getFact(event) {
 
   let factElement = document.querySelector("#fact");
   factElement.classList.remove("hidden");
-  factElement.innerHTML = `<span class="blinking">...getting a fun fact about "${topic.value}"...</span>`;
+  factElement.innerHTML = `<span class="blinking">Generating a fun fact about "${topic.value}"...</span>`;
 
   axios.get(apiUrl).then(showFact);
 }
