@@ -73,10 +73,14 @@ img {
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   font-size: small;
   font-weight: 100;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 
 footer a {
@@ -88,4 +92,14 @@ footer a {
 footer a:hover {
   color: #fff;
   text-shadow: 1px 1px 1px #ff003a;
+}
+
+.blinking {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
