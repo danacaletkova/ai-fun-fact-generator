@@ -19,7 +19,7 @@ img {
   margin: 20px auto;
 }
 
-.search-form {
+.topic-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +32,7 @@ img {
   text-shadow: 1px 1px 1px #ff003a;
 }
 
-.search-input {
+.topic-input {
   font-family: "Victor Mono", monospace;
   font-size: 14px;
   padding: 15px 20px;
@@ -42,7 +42,7 @@ img {
   width: 50%;
 }
 
-.search-button {
+.topic-button {
   font-family: "Victor Mono", monospace;
   color: #fff;
   background-color: #ff003a;
@@ -55,13 +55,13 @@ img {
   transition: all 200ms ease;
 }
 
-.search-button:hover {
+.topic-button:hover {
   cursor: pointer;
   background-color: #e30237;
   font-weight: 700;
 }
 
-.answer {
+.fact {
   height: 100px;
   background-color: #fff;
   color: rgba(0, 0, 0, 0.8);

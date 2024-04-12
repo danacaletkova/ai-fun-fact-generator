@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Fun Fact Factory: AI fun fact generator</title>
   </head>
   <body>
@@ -18,10 +19,10 @@
         <img src="src/fun-fact-factory.png" alt="" />
       </header>
       <main>
-        <form class="search-form">
+        <form class="topic-form" id="topic-form">
           <label class="label" for="search-input">Enter a topic:</label>
           <input
-            class="search-input"
+            class="topic-input"
             type="text"
             id="search-input"
             required
@@ -29,12 +30,12 @@
             placeholder="e.g. bananas, Harry Potter, ..."
           />
           <input
-            class="search-button"
+            class="topic-button"
             type="submit"
             value="Generate a fun fact"
           />
         </form>
-        <div class="answer">Apples float...</div>
+        <div class="fact" id="fact"></div>
       </main>
       <footer>
         This AI project was coded by
